@@ -1,6 +1,6 @@
 
 /****************************************************************************
- * Name: ESP12_Max7219_8x-Matrix_WiFiManager                                *
+ * Name: ESP_Max7219_Video_1					                            *
  *                                                                          *
  * Anschlussplan:                                                           *  
  *                                                                          *
@@ -55,7 +55,7 @@ Max72xxPanel matrix = Max72xxPanel(pinCS, numberOfHorizontalDisplays, numberOfVe
 
 void setup() {
   Serial.begin(BAUDRATE);
-  Serial.println("\nProjekt: ESP12_MAX7219_8x-Matrix");
+  Serial.println("\nProjekt: ESP_Max7219_Video_1");
 
   Serial.println();
   Serial.println();
