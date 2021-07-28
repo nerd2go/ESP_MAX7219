@@ -16,8 +16,7 @@
  *                                                                          *
  ****************************************************************************/
 
-// Einbinden der Libraries für WiFi und DNS 
-#include <DNSServer.h>      // wenn die Zeitserver als "Name" hinterlegt werden, bei IP kann es weg bleiben.
+// Einbinden der Libraries für WiFi
 
 #if defined(ESP8266) 
   #include <ESP8266WiFi.h>  // WiFi für ESP12
@@ -77,7 +76,7 @@ void setup() {
   
   delay(1000);
   // Konfigurieren der Zeitserver
-  configTime(0 * 3600, 0, "192.168.1.1", "192.168.178.1");
+  configTime(0 * 3600, 0, "ntp.uni-regensburg.de", "192.168.178.1");
   setenv("TZ", "GMT-1BST,M3.5.0/01,M10.5.0/02",1);
 
   // Einstellen der ggf. benötigetn Rotation
